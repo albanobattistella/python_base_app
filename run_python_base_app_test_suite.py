@@ -1,6 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 #    Copyright (C) 2019  Marcus Rickert
 #
-#    See https://github.com/marcus67/python_base_app
+#    See https://github.com/marcus67/little_brother
 #
 #    This program is free software; you can redistribute it and/or modify
 #    it under the terms of the GNU General Public License as published by
@@ -16,6 +19,7 @@
 #    with this program; if not, write to the Free Software Foundation, Inc.,
 #    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 
-include LICENSE
-include README.md
-include requirements.txt
+from python_base_app.test import test_suite
+
+if __name__ == '__main__':
+    exit(test_suite.main())
